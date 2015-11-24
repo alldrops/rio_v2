@@ -1,0 +1,50 @@
+.reservation {
+	.columns {
+		padding-left: 0.25em;
+		padding-right: 0.25em;
+	}
+	& &__form {
+		margin-top: 3.5em;
+	}
+	& &__field {
+		height: 50px;
+		font-size: 14px;
+		padding-right: 40px;
+	}
+	& &__date, input.reservation__date:not([type]):focus {
+		background: url(../images/icon-calendar.png) no-repeat 95% center;
+		background-size: 30px 30px;
+	}
+	& &__time {
+		background: url(../images/icon-clock.png) no-repeat 95% center;
+		background-size: 30px 30px;
+	}
+	& &__party {
+		background: url(../images/icon-people.png) no-repeat 95% center;
+		background-size: 30px 30px;
+	}
+	& &__submit {
+		width: 100%;
+		margin: 0;
+		padding: 1rem 2rem 1.0625rem 2rem;
+	}
+	.datepickr-wrapper {
+		display: block;
+	}
+
+	.datepickr-calendar {
+		.datepickr-months {
+			background-color: $green;
+			border: 1px solid $green;
+		}
+		.datepickr-current-month {
+			color: $white;
+		}
+		.datepickr-day {
+			color: $green;
+		}
+		.disabled .datepickr-day {
+			color: $lightgray;
+		}
+	}
+}
